@@ -6,18 +6,15 @@ client.on("ready", async () => {
   await init()
   await require("./utils/cacheGuilds");
   await require("./utils/cacheUsers");
-await client.wait(1000);
-await console.log(global.chalk.blue("[BOT]") + ` successfully logged to the bot`)
-console.log(global.chalk.blue("[BOT]") + ` the bot is now ready`)
-setTimeout(async function() {
+  await client.wait(1000);
+  await console.log(global.chalk.blue("[BOT]") + ` successfully logged to the bot`)
+  console.log(global.chalk.blue("[BOT]") + ` the bot is now ready`)
+  setTimeout(async function() {
 
 
     setInterval(async function() {
-        let guildsCounts = await client.shard.fetchClientValues("guilds.cache.size"); 
-        let guildsCount = (guildsCounts.reduce((p, count) => p + count) || client.guilds.cache.size)
-        let usersCounts = await client.shard.fetchClientValues("users.cache.size"); 
-        let usersCount = (usersCounts.reduce((p, count) => p + count) || client.users.cache.size)
-        client.user.setActivity(`.help | ${guildsCount} servers & ${usersCount} users`, {type: "WATCHING"}); 
+        
+    client.user.setActivity(`.help | ${client.guilds.cache.size} servers & ${client.users.cache.size} users`, {type: "WATCHING"}); 
         },20000);
     },10000);
     client.channels.cache.get('721746776910200885').send(`**Connecté sur ${client.user.username}#${client.user.discriminator}**`)
