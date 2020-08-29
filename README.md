@@ -45,6 +45,8 @@ npm start
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/WinstoneDev/xeed/issues). 
 
-## Show your support
+## Show your support        
 
 Give a ⭐️ if this project helped you!
+## Remerciements
+Thanks to [Mizuki](https://github.com/xMizuki/) for bot structure
