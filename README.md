@@ -25,7 +25,7 @@ npm install
 ## Usage
 
 ```sh
-node sharder.js in bot path
+node index.js in bot path
 ```
 
 ## Run tests
