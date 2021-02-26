@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node sharder.js"
+    "start": "node index.js"
   },
   "author": "Winstone",
   "license": "GPL 3.0"
